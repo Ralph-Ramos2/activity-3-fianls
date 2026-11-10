@@ -1,0 +1,168 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#1a001f,#4b006e,#7600a9);
+    color:white;
+    padding:20px;
+}
+
+/* Container */
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Header */
+.header{
+    text-align:center;
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    border:2px solid gold;
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.header h1{
+    font-size:2rem;
+}
+
+.subtitle{
+    margin-top:8px;
+    color:#d8d8d8;
+}
+
+.highlight{
+    color:gold;
+}
+
+/* Main Section */
+.main-area{
+    display:flex;
+    gap:20px;
+}
+
+/* Content */
+.content{
+    flex:2;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:12px;
+}
+
+/* Sidebar */
+.sidebar{
+    flex:1;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:12px;
+}
+
+.sidebar h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:10px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
+
+.sidebar a:hover{
+    color:gold;
+}
+
+/* Profile Card */
+.profile-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#151515;
+    padding:20px;
+    border:2px solid gold;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.avatar{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid gold;
+}
+
+.profile-info h2{
+    color:gold;
+    margin-bottom:5px;
+}
+
+.tagline{
+    margin-bottom:10px;
+}
+
+.bio{
+    color:#ddd;
+}
+
+/* Button */
+.contact-btn{
+    margin-top:12px;
+    padding:10px 18px;
+    border:none;
+    border-radius:5px;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:white;
+}
+
+/* Description */
+.description{
+    margin-top:15px;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    color:#ddd;
+}
+
+/* Responsive */
+@media (max-width:700px){
+
+    .main-area{
+        flex-direction:column;
+    }
+
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .avatar{
+        width:100px;
+        height:100px;
+    }
+}
